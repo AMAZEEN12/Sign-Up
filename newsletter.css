@@ -1,0 +1,123 @@
+main{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    margin: 50px 220px 0 250px;
+    background-color: white;
+    border-radius: 25px;
+}
+body{
+    background-color: hsl(234, 29%, 20%);
+    font-family: "Roboto", sans-serif;
+}
+h1{
+    font-size: 36px;
+    margin-top: 40px;
+    padding-top: 40px;
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.flex{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: -13px;
+}
+.flex img{
+    padding-right: 10px;
+    width: 17px;
+    height: 17px;
+}
+.first{
+    margin-left: -10px;
+    padding-left: 70px;
+}
+label{
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#label{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    width: 90%;
+    border: 1px solid hsl(231, 7%, 60%);
+    border-radius: 5px;
+    height: 40px;
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 14px;
+}
+input:focus{
+    border: 2px solid hsl(234, 29%, 20%);
+    outline: none;
+
+}
+button{
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    width: 97%;
+    background-color:  hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 70px;
+    cursor: pointer;
+}
+button:hover{
+    background:linear-gradient(to right, #ef5a77, hsl(4, 100%, 67%) ) ;
+}
+#image{
+    
+    margin-top: -20px;
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 480px) {
+    #image{
+        width: 120vw;
+        height: auto;
+        margin-top: -30px;
+        padding: 0;
+        border-radius: 25px;
+    }
+    body{
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    main{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column-reverse; 
+        width: 120%;       
+    }
+    .first{
+        margin-top: -120px;
+        margin-left: -140px;
+    }
+    p{
+        font-size: 15px;
+    }
+    #label{
+        margin-top: 20px;
+    }
+    button{
+        margin-top: 35px;
+    }
+    
+}

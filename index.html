@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Sign-up Form</title>
+    <link rel="icon" href="favicon-32x32.png">
+    <link rel="stylesheet" href="newsletter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="first">
+            <h1>Stay updated!</h1>
+            <p>Join 60,000+ project managers receiving monthly <br>
+            updates on:</p>
+            <div class="flex">
+                <img src="icon-list.svg" alt="check">
+                <p>Product discovery and building what matters</p>
+            </div>
+            <div class="flex">
+                <img src="icon-list.svg" alt="check">
+                <p>Measuring to ensure updates are a success</p>
+            </div>
+            <div class="flex">
+                <img src="icon-list.svg" alt="check">
+                <p>And much more!</p>
+            </div>
+
+            <div id="label">
+                <label for="Email" id="email">Email Address <span id="validation" style="color:hsl(4, 100%, 67%)"></span></label>
+                <input type="text" placeholder="email@company.com" id="inputText">
+                
+            </div>
+            <button id="button" onclick="validGmail()">Subscribe to monthly newsletter</button>
+        </div>
+        
+        
+        <div>
+            <img src="illustration-sign-up-desktop.svg" alt="vector-image" width="330px" height="430px" id="image">
+        </div>
+    </main>
+
+    <script src="newsletter.js"></script>
+        
+</body>
+</html>

@@ -1,0 +1,57 @@
+
+body{
+    background-color: white;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    background-color: white;
+    border-radius: 15px;
+    text-align: left;
+    padding: 50px;
+}
+h1{
+    font-size: 38px;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+}
+p{
+    font-size: 13px;
+    font-weight: 400;
+}
+button{
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    width: 97%;
+    background-color:  hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+button:hover{
+    background:linear-gradient(to right, #ef5a77, hsl(4, 100%, 67%) ) ;
+}
+
+.confirmMail{
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+}
+
+@media screen and (min-width:375px) and (max-width: 850px) {
+    body{
+        height: 50vh;
+    }
+    button:hover{
+        background:linear-gradient(to right, #ef5a77, hsl(4, 100%, 67%) ) ;
+    }
+    
+}
